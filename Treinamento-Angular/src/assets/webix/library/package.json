@@ -1,0 +1,51 @@
+{
+  "_args": [
+    [
+      "@xbs/webix-pro@6.2.7",
+      "E:\\Usuarios\\ax10645\\Desktop\\Projetos\\master\\SAIA-Angular"
+    ]
+  ],
+  "_from": "@xbs/webix-pro@6.2.7",
+  "_id": "@xbs/webix-pro@6.2.7",
+  "_inBundle": false,
+  "_integrity": "sha512-MYg+KG2bcwMqkXP8fETz6fUl+p7mnWxAuWpXRCPE7Z8kuwQvcfHuoouy5J7wrSdUJvMm69WqjHkv/HNkx+PrUg==",
+  "_location": "/@xbs/webix-pro",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@xbs/webix-pro@6.2.7",
+    "name": "@xbs/webix-pro",
+    "escapedName": "@xbs%2fwebix-pro",
+    "scope": "@xbs",
+    "rawSpec": "6.2.7",
+    "saveSpec": null,
+    "fetchSpec": "6.2.7"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://npm.webix.com/@xbs%2fwebix-pro/-/webix-pro-6.2.7.tgz",
+  "_spec": "6.2.7",
+  "_where": "E:\\Usuarios\\ax10645\\Desktop\\Projetos\\master\\SAIA-Angular",
+  "author": {
+    "name": "XB Software"
+  },
+  "description": "Webix UI",
+  "keywords": [
+    "webix",
+    "ui",
+    "widgets"
+  ],
+  "license": "SEE LICENSE IN license.text",
+  "main": "webix.js",
+  "name": "@xbs/webix-pro",
+  "publishConfig": {
+    "registry": "https://npm.webix.com"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "types": "types/webix.d.ts",
+  "version": "6.2.7"
+}

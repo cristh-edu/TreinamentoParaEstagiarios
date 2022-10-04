@@ -1,0 +1,19 @@
+<section>
+  <h1>Bem Vindo Mateus</h1>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Nome</th>
+        <th colspan="2">Descrição</th>
+        <th>Situação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of dataSource">
+        <td colspan="2">{{x.name}}</td>
+        <td colspan="2">{{x.description}}</td>
+        <td>{{x.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

@@ -1,0 +1,41 @@
+.accordion{
+  background-color: transparent !important;
+
+  .webix_accordionitem{
+    transition:width 0.5s;
+  }
+  // .webix_accordionitem.vertical{
+  //   transition:height 0.5s;
+  // }
+
+  .webix_accordionitem_header,
+  .webix_accordionitem.collapsed .webix_accordionitem_header,
+  .webix_accordionitem_header, 
+  .webix_accordionitem_button, 
+  .webix_accordionitem_header:hover, 
+  .webix_accordionitem_header:focus{
+    border-bottom: 1px solid $light-gray !important;
+    font-size: 14px;
+    // background-color:rgba($sidebar-bg, .2);
+    background-color:$bars-layout;
+    color: $gray;
+  }  
+
+  .webix_accordionitem_button{
+    color:$gray !important;
+    background-color:transparent;
+    border:none !important;
+  }
+
+  .webix_accordionitem_button:hover{
+    color:$primary !important;
+    background-color:transparent;
+    border:none !important;
+  }
+
+
+  .webix_accordionitem.horizontal.collapsed,
+  .webix_accordionitem.collapsed{
+    background: transparent;
+  }
+}

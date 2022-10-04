@@ -1,0 +1,33 @@
+.img {
+  max-height: 80vh;
+}
+
+section {
+  min-height: 92.9vh;
+  width: 100vw;
+  background: url("../../../assets/theme/Vector.svg") no-repeat;
+  background-position: 60vw -18vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  .text {
+    padding: 0 10%;
+    div {
+      padding-top: 5%;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      a {
+        color: #6b1f7c;
+        padding: 10px;
+        text-decoration: none;
+        text-align: center;
+        border: 3px #6b1f7c solid;
+        border-radius: 5px;
+        font-weight: bolder;
+      }
+    }
+  }
+}

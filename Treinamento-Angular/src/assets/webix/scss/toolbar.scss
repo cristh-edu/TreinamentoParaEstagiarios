@@ -1,0 +1,28 @@
+/*
+    Reescrito CSS para o toolbar do Webix
+*/
+.toolbar{
+    // background-color:rgba($primary, .65) !important;
+    background-color:$bars-layout !important;
+    text-align: left;
+
+    .webix_el_box:hover{
+        // background: rgba($primary, .65) !important;
+        background: $bars-layout !important;
+    }
+    .webix_icon, .webix_icon{
+        color:$gray !important;
+    }
+    .webix_icon:hover, .webix_icon:hover{
+        color:$primary !important;
+    }
+
+    .webix_view.webix_control .webix_disabled_box button {
+        .webix_icon, .webix_icon{
+            color:#d5d5d5 !important
+        }
+        background:  $bars-layout !important;
+        border:none;
+        text-shadow: none;
+    }
+}

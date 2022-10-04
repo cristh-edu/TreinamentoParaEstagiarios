@@ -1,0 +1,117 @@
+/* CSS PADRAO PGRO */
+.title_template {
+  font-weight: bold !important;
+  font-size: 15px !important;
+}
+
+.webix_fieldset_label {
+  margin-bottom: 1px !important;
+}
+
+fieldset {
+  padding-bottom: 2px !important;
+}
+
+legend {
+  border-bottom: 0px !important;
+}
+
+.action {
+  height: 18px;
+  width: 18px;
+}
+
+/* Mudar Cor do Botão */
+.webix_el_button button {
+  border: 1px solid #E05206 !important;
+  border-bottom: 1px solid #E05206 !important;
+  background: #E05206 !important;
+  color: #fff !important;
+  border-color: #E05206 !important;
+}
+
+/* Mudar a Cor dos Inputs da Avaliação */
+.inputGreen {
+  input {
+    background: #27ae60 !important ;
+    color: #000 !important;
+  }
+}
+
+.inputYellow {
+  input {
+    background: #ff0 !important;
+    color: #000 !important;
+  }
+}
+
+.inputRed {
+  input {
+    background: #ff0000 !important;
+    color: #000 !important;
+  }
+}
+
+.circleGreen {
+  background-color: green;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  border-radius: 50%;
+  margin: 0 auto
+}
+
+.circleWhite {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.5px;
+  margin: 0 auto
+}
+
+.circleLightGreen {
+  background-color: greenyellow;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.5px;
+  margin: 0 auto
+}
+
+.circleRed {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.5px;
+  margin: 0 auto;
+}
+
+.circleYellow {
+  background-color: #e4d50a;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.5px;
+  margin: 0 auto
+}
+
+.circleOrange {
+  background-color: orange;
+  width: 15px;
+  height: 15px;
+  margin-top: 2px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.5px;
+  margin: 0 auto
+}

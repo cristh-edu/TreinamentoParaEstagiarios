@@ -1,0 +1,368 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./app/layout/theme/color-schemes/default";
+@import "./assets/webix/scss/accordion.scss";
+@import "./assets/webix/scss/toolbar.scss";
+@import "./assets/webix/scss/viewtabs.scss";
+@import "./assets/webix/scss/pgro.scss";
+
+// #### Webix
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.webix_view.webix_form.formAddGroup.webix_layout_form {
+  position: absolute !important;
+  z-index: 100 !important;
+}
+
+html,
+body {
+  // font-family: Arial;
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+}
+
+.webix_icon_button .webix_icon {
+  color: #ffffff;
+}
+
+nav a {
+  display: inline-block;
+  width: 150px;
+  text-decoration: none;
+  color: blue;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+}
+
+nav a.active {
+  background: #aad;
+  color: black;
+}
+
+.formbox input {
+  width: 200px;
+  padding: 5px;
+}
+
+.formbox button {
+  width: 100px;
+  padding: 5px;
+}
+
+.pagebox {
+  width: 100%;
+  height: 500px;
+  display: block;
+}
+
+.cursor-no-drop {
+  cursor: no-drop;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+rows,
+columns {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+cell {
+  display: none;
+}
+
+.webix_template > cell {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+.webix_template {
+  padding: 0px;
+}
+
+.webix_toolbar .webix_el_label .webix_el_box {
+  background: $secondary;
+  text-align: center;
+}
+
+/*Configuração padrão para todos os botões primarios utilizados nas classes*/
+.webix-button-primary {
+  button {
+    background: rgba(247, 143, 32, 0.8);
+    color: #fff !important;
+    border: 3px solid $primary !important;
+    border-radius: 4px !important;
+    bottom: 5px;
+    position: absolute;
+    span {
+      color: #fff !important;
+    }
+  }
+}
+.webix-button-primary:hover {
+  button {
+    background: rgb(247, 143, 32);
+    color: #fff !important;
+  }
+}
+
+/*Configuração padrão para todos os botões secundarios utilizados nas classes*/
+.webix-button-secondary,
+.webix-button-secondary:hover {
+  button {
+    background-color: #f5f5f5;
+    color: $black;
+    border: none;
+  }
+}
+
+/*Classe criada para tirar linha entre o formulario*/
+.webix_view {
+  border: none;
+}
+
+/*Modal Webix troca a cor da borda*/
+.webix_alert .webix_popup_title,
+.webix_confirm .webix_popup_title,
+.webix_alert .webix_popup_text,
+.webix_confirm .webix_popup_text {
+  box-shadow: inset 0 4px $sidebar-bg;
+}
+
+/*Modal Webix troca o estilo de botão primario dos modais*/
+.webix_popup_button.confirm,
+.webix_popup_button.confirm:hover,
+.webix_popup_button.confirm:active {
+  background: $primary;
+  border-color: $primary;
+  border-bottom: 1px solid $primary;
+}
+
+/*Modal Webix troca o estilo de botão secondario dos modais*/
+.webix_popup_button,
+.webix_popup_button:hover,
+.webix_popup_button:active {
+  background: $secondary;
+  border-color: $secondary;
+  border-bottom: 1px solid $secondary;
+}
+
+/*Estilo do botão visualizar que é utilizado nos datatable*/
+.webix-action-button-view {
+  margin-right: 5px;
+  color: $info;
+}
+
+.webix-action-button-disabled {
+  margin-right: 5px;
+  color: #d5d5d5;
+}
+
+/*Estilo do botão visualizar que é utilizado nos datatable*/
+.webix-action-button-info {
+  margin-right: 5px;
+  color: $secondary;
+}
+
+.webix-action-button-followUp {
+  margin-right: 5px;
+  color: #494949;
+}
+
+/*Estilo do botão editar que é utilizado nos datatable*/
+.webix-action-button-edit {
+  margin-right: 5px;
+  color: $success;
+}
+
+/*Estilo do botão remover que é utilizado nos datatable*/
+.webix-action-button-trash {
+  margin-right: 5px;
+  color: $danger;
+}
+
+.webix_ss_header,
+.webix_ss_header TD,
+.webix_ss_vscroll_header,
+.webix_dd_drag_column {
+  font-size: 13px;
+  color: #494949;
+  background: #f9f9f9;
+  border: none;
+}
+
+/*Estilo da row quando for clicada*/
+.webix_dtable_focused .webix_column > div.webix_row_select,
+.webix_dtable_focused .webix_column > div.webix_column_select {
+  background: $primary;
+  // font-weight: bold;
+}
+
+/*Estilo da row quando ficar selecionada*/
+.webix_column > div.webix_cell_select,
+.webix_column > div.webix_column_select,
+.webix_column > div.webix_row_select {
+  background: $primary;
+  // font-weight: bold;
+  color: $white;
+}
+
+.webix_view .webix_pager_item {
+  border: 1px solid $bars-layout;
+  border-bottom: 1px solid $bars-layout;
+  color: $white;
+  background: $bars-layout;
+  .webix_icon {
+    color: $gray;
+  }
+}
+
+.webix_view .webix_pager_item:hover {
+  border: 1px solid $bars-layout;
+  border-bottom: 1px solid $bars-layout;
+  color: $white;
+  background: $bars-layout;
+  .webix_icon {
+    color: $gray;
+  }
+}
+
+.webix_view .webix_pager_item_selected {
+  color: $white;
+  border: 1px solid $primary;
+  border-bottom: 1px solid $primary;
+  background: $primary;
+  color: $white;
+  border-color: $primary;
+}
+
+.webix_c_scroll_y div {
+  width: 20px;
+  margin-left: -13px;
+}
+
+.webix_c_scroll_y div:hover {
+  width: 40px;
+  margin-left: -33px;
+}
+
+.webix_c_scroll_x div {
+  height: 20px;
+  margin-top: -13px;
+}
+
+.webix_c_scroll_x:hover div {
+  height: 40px;
+  margin-top: -33px;
+}
+
+.button-search {
+  button {
+    background: #f5f5f5;
+  }
+}
+
+.button-export-sheets {
+  button {
+    background: #f5f5f5;
+  }
+}
+
+span.webix_icon {
+  font-size: 16px !important;
+}
+
+.webix_layout_toolbar.webix_toolbar {
+  background: #f5f5f5;
+}
+
+.webix_view.webix_control.webix_el_button.buttonTasks {
+  button {
+    color: $black;
+  }
+}
+
+.webix_el_combo span.webix_input_icon,
+.webix_el_richselect span.webix_input_icon,
+.webix_el_datepicker span.webix_input_icon,
+.webix_el_colorpicker span.webix_input_icon,
+.webix_el_dbldatepicker span.webix_input_icon {
+  background: #f5f5f5;
+}
+
+.webix_list_item.webix_selected {
+  background: transparent;
+  border: 1px solid #d5d5d5;
+}
+
+.webix_el_combo span.webix_input_icon,
+.webix_el_richselect span.webix_input_icon,
+.webix_el_datepicker span.webix_input_icon,
+.webix_el_colorpicker span.webix_input_icon,
+.webix_el_dbldatepicker span.webix_input_icon {
+  background: transparent;
+  color: #f5f5f5;
+}
+
+.webix_el_button input,
+.webix_el_toggle input,
+.webix_el_button button,
+.webix_el_toggle button,
+.webixbutton {
+  border: none;
+  border-bottom: none;
+}
+
+.webixtype_base,
+.webixtype_prev,
+.webixtype_next,
+.webixbutton,
+.webixtype_base:hover,
+.webixtype_prev:hover,
+.webixtype_next:hover,
+.webixbutton:hover {
+  background: $primary;
+  border: 1px solid $primary;
+  padding: 5px;
+  border-radius: 5px;
+  color: $white;
+  width: 100%;
+  padding: 3px 2px !important;
+}
+
+input:read-only,
+textarea:read-only,
+select[readonly] {
+  background: #ededed !important;
+}
+
+.webix_list_item.webix_selected {
+  color: #ffffff !important;
+  background: #6b1f7c !important;
+}
+
+.webix_selected {
+  background: #6b1f7c !important;
+  color: #ffffff !important;
+}
+
+.webix_multicombo_input {
+  height: 31px !important;
+}
+
+.webix_multicombo_value {
+  line-height: 26px !important;
+}
+
+.webix_table_checkbox {
+  position: absolute !important;
+  left: 47%;
+}

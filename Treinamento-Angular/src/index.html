@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title> APERAM - Treinamento Angular </title>
+
+  <!-- <base href="/"> -->
+  <base href="./">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+  <script src="//cdn.webix.com/edge/webix.js"></script>
+
+  <link rel="stylesheet" href="assets/fonts/style.css">
+
+  <link href="//cdn.webix.com/edge/skins/compact.css" rel="stylesheet" type="text/css">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+  <style type="text/css">
+    #loading {
+      position: absolute;
+      margin: auto;
+      background-color: rgba(0, 0, 0, .2);
+      height: 100%;
+      width: 100%;
+      opacity: 20;
+      z-index: 9999;
+      display: none;
+    }
+
+    .load {
+      position: absolute;
+      z-index: 999999999 !important;
+      top: 50%;
+      /* posiciona na metade da tela */
+      margin-top: -25px;
+      /* e retrocede metade da altura */
+      left: 50%;
+      /* posiciona na metade da tela */
+      margin-left: -100px;
+      /* e retrocede metade da largura */
+    }
+  </style>
+</head>
+
+<body style="margin: 0; padding: 0; overflow: hidden;">
+
+  <app-root></app-root>
+
+  <div id="loading">
+    <div class="load"> <img src="assets/loading.gif"> </div>
+  </div>
+
+</body>
+
+</html>

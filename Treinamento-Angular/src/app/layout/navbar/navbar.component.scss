@@ -1,0 +1,42 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 7vh;
+  background-color: #6b1f7c;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  padding: 0 10px;
+  box-shadow: #000 0 0px 10px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: end;
+    li {
+      a {
+        padding: 0 15px;
+        margin: 0;
+        width: auto;
+        color: #fafafa;
+      }
+    }
+  }
+  a {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: auto;
+    img {
+      margin: 0;
+      padding: 0;
+      height: 5vh;
+    }
+  }
+}
