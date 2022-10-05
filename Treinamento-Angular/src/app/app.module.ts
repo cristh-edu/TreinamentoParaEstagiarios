@@ -10,6 +10,8 @@ import { NavbarComponent } from "./layout/navbar/navbar.component";
 import { BeatrizComponent } from "./application/beatriz/beatriz.component";
 import { MateusComponent } from "./application/mateus/mateus.component";
 import { FooterComponent } from "./layout/footer/footer.component";
+import { MateusExemplesComponent } from './application/mateus/mateus-exemples/mateus-exemples.component';
+import { BeatrizExemplesComponent } from './application/beatriz/beatriz-exemples/beatriz-exemples.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { FooterComponent } from "./layout/footer/footer.component";
     BeatrizComponent,
     MateusComponent,
     FooterComponent,
+    MateusExemplesComponent,
+    BeatrizExemplesComponent,
   ],
   imports: [BrowserModule, HttpClientModule, AppRoutingModule],
   providers: [

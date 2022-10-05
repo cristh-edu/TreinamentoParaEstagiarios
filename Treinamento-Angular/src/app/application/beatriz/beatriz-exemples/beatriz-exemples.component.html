@@ -1,0 +1,27 @@
+<section>
+  <h1>Exemplo {{ page.id }} - {{ page.name }}</h1>
+  <table>
+    <thead>
+      <tr>
+        <th
+          *ngFor="let td of table.thead"
+          [style]="td.style || ''"
+          [attr.colspan]="td.colspan || ''"
+        >
+          {{ td.label }}
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tr of table.tbody">
+        <td
+          *ngFor="let td of tr"
+          [style.text-align]="td.style || ''"
+          [attr.colspan]="td.colspan || ''"
+        >
+          {{ td.label }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>

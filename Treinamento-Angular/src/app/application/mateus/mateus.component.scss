@@ -12,13 +12,31 @@ section {
     margin-left: 10%;
     border-collapse: collapse;
     table-layout: fixed;
-    tr {
-      width: 100%;
-      th,
-      td {
-        border: 1px solid #000;
+    thead {
+      background-color: #6b1f7c;
+      color: white;
+      th {
+        font-weight: normal;
         padding: 5px;
       }
     }
+    tbody {
+      tr {
+        td {
+          border: 1px solid #ddd;
+          padding: 5px;
+        }
+        &:nth-child(even) {
+          background-color: #eae9ea;
+        }
+        &:hover {
+          background-color: #e2e2e2;
+        }
+      }
+    }
   }
+}
+
+.text-center {
+  text-align: center;
 }

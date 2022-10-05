@@ -1,104 +1,19 @@
 import { Component, OnInit } from "@angular/core";
-
+import { Router } from "@angular/router";
+import exemples from "./exemples";
 @Component({
   selector: "app-beatriz",
   templateUrl: "./beatriz.component.html",
   styleUrls: ["./beatriz.component.scss"],
 })
 export class BeatrizComponent implements OnInit {
-  dataSource = [
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-  ];
-  constructor() {}
+  dataSource = exemples;
+
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  navigateTo(param) {
+    this.router.navigate(["/beatriz", param]);
+  }
 }

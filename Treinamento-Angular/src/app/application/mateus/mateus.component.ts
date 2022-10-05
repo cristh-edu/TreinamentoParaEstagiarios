@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
+import exemples from "./exemples";
 
 @Component({
   selector: "app-mateus",
@@ -6,20 +8,13 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./mateus.component.scss"],
 })
 export class MateusComponent implements OnInit {
-  dataSource = [
-    {
-      name: "Arroz",
-      description: "Tipo 1",
-      status: "Disponível",
-    },
-    {
-      name: "Feijão",
-      description: "Carioca",
-      status: "Vendido",
-    },
-  ];
+  dataSource = exemples;
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  navigateTo(param) {
+    this.router.navigate(["/mateus", param]);
+  }
 }
